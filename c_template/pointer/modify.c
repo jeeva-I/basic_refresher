@@ -12,7 +12,7 @@ void modify_array(int *arr, int size);
 
 int main()
 {
-    int array[5] = {10, 20, 30, 40, 50};
+    int array[5] = {10, 20, 30, 40, 50};    
     modify_array(array, 5);
     print_array(array, 5);
     return 0;

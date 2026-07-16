@@ -1,23 +1,42 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main()
 {
+    int n, i, j;
+    scanf("%d", &n);
 
-    for(int i = 1; i <= 5; i++) //row 
+    for(i = 0; i < n; i++)
     {
-        for(int j = 1; j <= 5; j++) //column
+        int left, right;
+
+        if(i <= n / 2)
         {
-            if(i + j == 6 || i == j) //printing numbers loop
+            left = i + 1;
+            right = n - i;
+        }
+        else
+        {
+            left = n - i;
+            right = i + 1;
+        }
+
+        for(j = 0; j < n; j++)
+        {
+            if(j == i || j == n - i - 1)
             {
-                printf("%d", j);
+                if(j == i)
+                    printf("%d", left);
+                else
+                    printf("%d", right);
             }
-            else    //printing the space loop 
+            else
             {
-                printf("_");
+                printf(" ");
             }
         }
-        printf("\n"); //printing the new line 
+
+        printf("\n");
     }
+
     return 0;
-
-
 }

@@ -12,6 +12,6 @@ int main()
 
 int *modify()
 {
-    int array[5] = {10, 20, 30, 40, 50};
+    static int array[5] = {10, 20, 30, 40, 50};
     return array;
 }

@@ -4,7 +4,7 @@ int main()
     static int num = 5;
     if(--num)
     {
-        main(); //recursion 
+        return main(); //recursion wth return
     }
     printf("%d\n", num);
 

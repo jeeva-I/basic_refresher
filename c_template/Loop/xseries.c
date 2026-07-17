@@ -9,7 +9,7 @@ int main()
     {
         int left, right;
 
-        if(i <= n / 2)
+        if(i <= n)
         {
             left = i + 1;
             right = n - i;

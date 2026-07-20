@@ -2,9 +2,12 @@
 
 int main()
 {
-    char *str1 = "Hello";
-    char *str2 = "Hello";
+    // char *str1 = "Hello";
+    // char *str2 = "Hello";
 
+    char str1[] = "Hello";
+    char str2[] = "Hello";
+    
     if(str1 == str2)
     {
         printf("Same\n");

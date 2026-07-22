@@ -7,7 +7,7 @@ int main()
 
     printf("Enter string1 : ");
     fgets(str1,50,stdin); //Getting string 2
-    
+    printf("/n"); //New line
     printf("Enter string2 : ");
     fgets(str2,50,stdin); //getting string 2
     int ret = strcmp(str1, str2); //Using string comparision

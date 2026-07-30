@@ -13,7 +13,7 @@ struct details
     struct details st = {"Jeeva", 46, "Utharavai"};
     struct details *sptr = &st;
 
-    printf("%d\n", (*sptr).id);
+    printf("%d\n", sptr->id);
 
     return 0;
  }

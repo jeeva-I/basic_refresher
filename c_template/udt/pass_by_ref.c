@@ -10,10 +10,10 @@ struct details
 
  int main()
  {
-    struct details st = {"Jeeva", 46, Utharavai};
+    struct details st = {"Jeeva", 46, "Utharavai"};
     struct details *sptr = &st;
 
-    printf("%s\n", *sptr.id);
+    printf("%d\n", (*sptr).id);
 
     return 0;
  }

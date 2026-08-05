@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    int month;
+    printf("Enter the number starting with 0 :");
+    scanf("%d", &month);
+    printf("%d\n",month);
+    return 0;
+}

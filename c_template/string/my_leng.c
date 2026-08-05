@@ -18,7 +18,7 @@
      
      //Getting string from the user
      //printf("Enter the string : ");
-     scanf("%49s", str);
+     fgets(str,50,stdin);
      
      //Function call
      int res = my_len(str);
@@ -34,13 +34,14 @@
  {
      //Declaration 
      int count  = 0;
-    
-     while(*str != '\0')
+    if(*str != '\n')
+    {
+     while(*str != '\0' && *str != '\n')
      {
         count++;
         str++;
      }
-     
+    }
      
      return count;
  }

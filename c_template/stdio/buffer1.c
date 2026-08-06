@@ -6,7 +6,7 @@ int main()
     while(1)
     {
         printf("Hello World");
-        sleep(1);
+        sleep(1); //it displays the output when the buffer memory gets full
     }
 
     return 0;

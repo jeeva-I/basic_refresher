@@ -15,6 +15,8 @@ int main()
     {
         printf("File Opened Successfully\n");
     }
+    fclose(fptr);
+    return 0 ;
 
     return 0;
 }

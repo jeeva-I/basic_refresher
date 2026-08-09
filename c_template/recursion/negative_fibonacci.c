@@ -25,8 +25,8 @@ int main()
     }
     else
     {
-    //Function call
-    negative_fibonacci(limit, 0, 1);
+     //Function call
+     negative_fibonacci(limit, 0, 1);
     }
     
     return 0;
@@ -36,12 +36,12 @@ int main()
 void negative_fibonacci(int limit,int first, int sec)
 {
     //Base condition
-    if(first < -limit || first > limit) 
+    if(first < limit || first > -limit) 
     {
        return;
     }
     
-        printf("%d, ",first);
+        printf("%d, ", first);
         
         //Function call
         negative_fibonacci(limit, sec, first - sec);

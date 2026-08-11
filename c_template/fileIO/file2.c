@@ -1,5 +1,8 @@
 #include<stdio.h>
 
+/*
+This program is for reading and priting the character
+*/
 int main()
 {
     FILE *fptr;

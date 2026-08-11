@@ -19,7 +19,7 @@
     fptr2 = fopen("text_copy.txt","a"); //appeand the character
     
     //validation for file open
-    if(fptr1 == NULL && fptr2 == NULL)
+    if(fptr1 == NULL)
     {
         printf("File doesn't exists\n");
         return -1;

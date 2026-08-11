@@ -2,20 +2,18 @@
 
 int main()
 {
-    FILE *fptr;
+    FILE *fptr; //FIle pointer
 
-    fptr = fopen("text.txt", "w");
+    fptr = fopen("text.txt", "w"); //open th file and set the mode
 
+    //validation
     if(fptr == NULL)
     {
         printf("File doesn't exists\n");
-        return 0;
+        return -1;
     }
-    else
-    {
-        printf("File Opened Successfully\n");
-    }
-    fclose(fptr);
+    printf("File Opened Successfully\n");
+    fclose(fptr); //closing the file 
     return 0 ;
 
     return 0;

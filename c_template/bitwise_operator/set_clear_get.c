@@ -30,14 +30,17 @@
     //get bit
     printf("Get bit at nth position is : ");
     //validation
-    if(num & (1 << position))
-    {
-        printf("1\n");
-    }
-    else
-    {
-        printf("0\n");
-    }
+    // if(num & (1 << position))
+    // {
+    //     printf("1\n");
+    // }
+    // else
+    // {
+    //     printf("0\n");
+    // }
+
+    //Getting bit without if_else
+    printf("%d\n", (num >> position) & 1);
     
 
     return 0;

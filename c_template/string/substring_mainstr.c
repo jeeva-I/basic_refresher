@@ -6,6 +6,7 @@
  
  //Header Inclusion
  #include<stdio.h>
+ #include<string.h>
  
  //Function prototype
  void my_serachstr(char*, char*);
@@ -23,7 +24,8 @@
     printf("Enter the sub string : ");
     fgets(str2,20,stdin);
      
-
+    str1[strcspn(str1,"\n")] = '\0';
+    str2[strcspn(str2,"\n")] = '\0';
      //Function call call 
      my_serachstr(str1, str2);
      
@@ -49,10 +51,12 @@
         }
         if(*s == '\0')
         {
-            printf("%s", str1);
-            break;
+            printf("%s\n", str1);
+            return;
         }
         str1++;
     }
+
+    printf("Sub string is not found\n");
         
   }

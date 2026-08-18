@@ -7,8 +7,11 @@ int main()
     void *iptr = &num;
     void *cptr = &ch;
 
-    printf("Size of void pointer : %zu\n", sizeof(iptr));
-    printf("Size of void pointer : %zu\n", sizeof(void*));
+    printf("%d\n", *iptr); //Trying to derefrencing
+
+
+    // printf("Size of void pointer : %zu\n", sizeof(iptr));
+    // printf("Size of void pointer : %zu\n", sizeof(void*));
 
 
     return 0;

@@ -13,6 +13,7 @@ int main()
     }
     printf("Memory is allocated\n");
 
+    free(ptr);
     return 0;
 
 

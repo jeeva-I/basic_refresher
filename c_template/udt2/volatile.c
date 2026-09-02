@@ -2,7 +2,7 @@
 
 int main()
 {
-     long int wait;
+    volatile long int wait;
     unsigned char bit = 0;
     while(1)
     {
